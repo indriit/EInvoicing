@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dMUGxQ7oKq4=",
+  "success": true,
+  "projectFilePath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/EInvoicingSaaS.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/indrit/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

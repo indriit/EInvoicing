@@ -4,6 +4,17 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EInvoicingSaaS.Domain\EInvoicingSaaS.Domain.csproj" />
+    <ProjectReference Include="..\EInvoicingSaaS.Application\EInvoicingSaaS.Application.csproj" />
+    <ProjectReference Include="..\EInvoicingSaaS.Infrastructure\EInvoicingSaaS.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
+  </ItemGroup>
 
 </Project>

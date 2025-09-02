@@ -1,0 +1,5 @@
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/obj/Debug/net8.0/EInvoicingSaaS.Application.csproj.AssemblyReference.cache
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/obj/Debug/net8.0/EInvoicingSaaS.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/obj/Debug/net8.0/EInvoicingSaaS.Application.AssemblyInfoInputs.cache
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/obj/Debug/net8.0/EInvoicingSaaS.Application.AssemblyInfo.cs
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/obj/Debug/net8.0/EInvoicingSaaS.Application.csproj.CoreCompileInputs.cache

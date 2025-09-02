@@ -1,0 +1,168 @@
+@page "/create-invoice"
+@using EInvoicingSaaS.Application.DTOs
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Factuur Aanmaken</PageTitle>
+
+<h3>Factuur Aanmaken</h3>
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    <EditForm Model="@invoiceRequest" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary class="text-danger" />
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Factuurnummer *</label>
+                    <InputText class="form-control" @bind-Value="invoiceRequest.InvoiceNumber" />
+                    <ValidationMessage For="@(() => invoiceRequest.InvoiceNumber)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Klantnaam *</label>
+                    <InputText class="form-control" @bind-Value="invoiceRequest.CustomerName" />
+                    <ValidationMessage For="@(() => invoiceRequest.CustomerName)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Straat *</label>
+                    <InputText class="form-control" @bind-Value="invoiceRequest.CustomerStreet" />
+                    <ValidationMessage For="@(() => invoiceRequest.CustomerStreet)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Stad *</label>
+                    <InputText class="form-control" @bind-Value="invoiceRequest.CustomerCity" />
+                    <ValidationMessage For="@(() => invoiceRequest.CustomerCity)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nettobedrag *</label>
+                    <InputNumber class="form-control" @bind-Value="invoiceRequest.NetAmount" />
+                    <ValidationMessage For="@(() => invoiceRequest.NetAmount)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">BTW-bedrag *</label>
+                    <InputNumber class="form-control" @bind-Value="invoiceRequest.TaxAmount" />
+                    <ValidationMessage For="@(() => invoiceRequest.TaxAmount)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">BTW-tarief (%) *</label>
+                    <InputNumber class="form-control" @bind-Value="invoiceRequest.TaxRate" />
+                    <ValidationMessage For="@(() => invoiceRequest.TaxRate)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Omschrijving *</label>
+                    <InputText class="form-control" @bind-Value="invoiceRequest.ItemDescription" />
+                    <ValidationMessage For="@(() => invoiceRequest.ItemDescription)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Eenheidsprijs *</label>
+                    <InputNumber class="form-control" @bind-Value="invoiceRequest.UnitPrice" />
+                    <ValidationMessage For="@(() => invoiceRequest.UnitPrice)" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hoeveelheid *</label>
+                    <InputNumber class="form-control" @bind-Value="invoiceRequest.Quantity" />
+                    <ValidationMessage For="@(() => invoiceRequest.Quantity)" />
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary" disabled="@isLoading">
+                @if (isLoading)
+                {
+                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                }
+                Factuur Aanmaken
+            </button>
+            <button type="button" class="btn btn-secondary ms-2" @onclick="ResetForm">Reset</button>
+        </div>
+    </EditForm>
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert @(isSuccess ? "alert-success" : "alert-danger") mt-3 alert-dismissible fade show" role="alert">
+        @message
+        <button type="button" class="btn-close" @onclick="ClearMessage"></button>
+    </div>
+}
+
+@code
+{
+    private InvoiceRequest invoiceRequest = new();
+    private string message = string.Empty;
+    private bool isLoading = false;
+    private bool isSuccess = false;
+
+    protected override void OnInitialized()
+    {
+        invoiceRequest.IssueDate = DateTime.Today;
+        invoiceRequest.DueDate = DateTime.Today.AddDays(30);
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        isLoading = true;
+        ClearMessage();
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("api/Invoice", invoiceRequest);
+
+            if (response.IsSuccessStatusCode)
+            {
+                isSuccess = true;
+                message = "Factuur succesvol aangemaakt!";
+                ResetForm();
+
+                // Optional: Navigate after delay
+                await Task.Delay(2000);
+                Navigation.NavigateTo("/invoices");
+            }
+            else
+            {
+                isSuccess = false;
+                var errorContent = await response.Content.ReadAsStringAsync();
+                message = $"Fout bij aanmaken factuur: {errorContent}";
+            }
+        }
+        catch (HttpRequestException ex)
+        {
+            isSuccess = false;
+            message = $"Netwerkfout: {ex.Message}";
+        }
+        catch (Exception ex)
+        {
+            isSuccess = false;
+            message = $"Onverwachte fout: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private void ResetForm()
+    {
+        invoiceRequest = new InvoiceRequest();
+        OnInitialized();
+    }
+
+    private void ClearMessage()
+    {
+        message = string.Empty;
+        isSuccess = false;
+    }
+}

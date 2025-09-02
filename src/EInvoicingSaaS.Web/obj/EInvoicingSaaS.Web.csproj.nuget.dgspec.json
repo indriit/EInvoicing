@@ -4,27 +4,27 @@
     "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/EInvoicingSaaS.Web.csproj": {}
   },
   "projects": {
-    "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/EInvoicingSaaS.Web.csproj": {
+    "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/EInvoicingSaaS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/EInvoicingSaaS.Web.csproj",
-        "projectName": "EInvoicingSaaS.Web",
-        "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/EInvoicingSaaS.Web.csproj",
+        "projectUniqueName": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/EInvoicingSaaS.Application.csproj",
+        "projectName": "EInvoicingSaaS.Application",
+        "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/EInvoicingSaaS.Application.csproj",
         "packagesPath": "/home/indrit/.nuget/packages/",
-        "outputPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/obj/",
+        "outputPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/indrit/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -41,12 +41,12 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "UBLSharp": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[1.1.1, )"
             }
           },
           "imports": [
@@ -63,7 +63,276 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.4, 9.0.4]"
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj",
+        "projectName": "EInvoicingSaaS.Domain",
+        "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj",
+        "packagesPath": "/home/indrit/.nuget/packages/",
+        "outputPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/indrit/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/EInvoicingSaaS.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/EInvoicingSaaS.Infrastructure.csproj",
+        "projectName": "EInvoicingSaaS.Infrastructure",
+        "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/EInvoicingSaaS.Infrastructure.csproj",
+        "packagesPath": "/home/indrit/.nuget/packages/",
+        "outputPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/indrit/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj": {
+                "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/EInvoicingSaaS.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/EInvoicingSaaS.Web.csproj",
+        "projectName": "EInvoicingSaaS.Web",
+        "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/EInvoicingSaaS.Web.csproj",
+        "packagesPath": "/home/indrit/.nuget/packages/",
+        "outputPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/indrit/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/EInvoicingSaaS.Application.csproj": {
+                "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/EInvoicingSaaS.Application.csproj"
+              },
+              "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj": {
+                "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj"
+              },
+              "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/EInvoicingSaaS.Infrastructure.csproj": {
+                "projectPath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/EInvoicingSaaS.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "UBLSharp": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.19, 8.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.19, 8.0.19]"
             }
           ],
           "frameworkReferences": {
@@ -74,7 +343,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

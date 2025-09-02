@@ -1,14 +1,31 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EInvoicingSaaS.Domain", "src\EInvoicingSaaS.Domain\EInvoicingSaaS.Domain.csproj", "{GUID}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EInvoicingSaaS.Application", "src\EInvoicingSaaS.Application\EInvoicingSaaS.Application.csproj", "{GUID}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EInvoicingSaaS.Infrastructure", "src\EInvoicingSaaS.Infrastructure\EInvoicingSaaS.Infrastructure.csproj", "{GUID}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EInvoicingSaaS.Web", "src\EInvoicingSaaS.Web\EInvoicingSaaS.Web.csproj", "{GUID}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EInvoicingSaaS.Web.Blazor", "src\EInvoicingSaaS.Web.Blazor\EInvoicingSaaS.Web.Blazor.csproj", "{GUID}"
+EndProject
+
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {GUID}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {GUID}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {GUID}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {GUID}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
 EndGlobal

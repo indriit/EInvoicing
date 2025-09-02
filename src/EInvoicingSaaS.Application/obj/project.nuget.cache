@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "dMUGxQ7oKq4=",
+  "dgSpecHash": "7HXrTCslqJA=",
   "success": true,
   "projectFilePath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Application/EInvoicingSaaS.Application.csproj",
   "expectedPackageFiles": [
-    "/home/indrit/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
+    "/home/indrit/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/indrit/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/home/indrit/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/home/indrit/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/indrit/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/indrit/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "/home/indrit/.nuget/packages/microsoft.netcore.app.ref/9.0.8/microsoft.netcore.app.ref.9.0.8.nupkg.sha512",
+    "/home/indrit/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.8/microsoft.aspnetcore.app.ref.9.0.8.nupkg.sha512"
   ],
   "logs": []
 }

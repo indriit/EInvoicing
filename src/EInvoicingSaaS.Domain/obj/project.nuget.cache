@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OmHJX57yEio=",
+  "dgSpecHash": "idGU9KS4dpU=",
   "success": true,
   "projectFilePath": "/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/EInvoicingSaaS.Domain.csproj",
   "expectedPackageFiles": [
-    "/home/indrit/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
+    "/home/indrit/.nuget/packages/microsoft.netcore.app.ref/9.0.8/microsoft.netcore.app.ref.9.0.8.nupkg.sha512",
+    "/home/indrit/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.8/microsoft.aspnetcore.app.ref.9.0.8.nupkg.sha512"
   ],
   "logs": []
 }

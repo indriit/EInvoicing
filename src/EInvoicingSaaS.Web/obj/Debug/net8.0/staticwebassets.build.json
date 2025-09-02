@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "QTqUqGHRG4EXQkUyGoIzrhZebvhmNvpVrEW/aseBBDI=",
+  "Source": "EInvoicingSaaS.Web",
+  "BasePath": "_content/EInvoicingSaaS.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

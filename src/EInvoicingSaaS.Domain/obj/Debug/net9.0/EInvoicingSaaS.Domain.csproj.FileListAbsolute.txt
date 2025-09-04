@@ -1,10 +1,11 @@
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/bin/Debug/net9.0/EInvoicingSaaS.Domain.deps.json
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/bin/Debug/net9.0/EInvoicingSaaS.Domain.dll
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/bin/Debug/net9.0/EInvoicingSaaS.Domain.pdb
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/EInvoicingSaaS.Domain.GeneratedMSBuildEditorConfig.editorconfig
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/EInvoicingSaaS.Domain.AssemblyInfoInputs.cache
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/EInvoicingSaaS.Domain.AssemblyInfo.cs
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/EInvoicingSaaS.Domain.csproj.CoreCompileInputs.cache
-/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/bin/Debug/net9.0/EInvoicingSaaS.Domain.deps.json
-/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/bin/Debug/net9.0/EInvoicingSaaS.Domain.dll
-/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/bin/Debug/net9.0/EInvoicingSaaS.Domain.pdb
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/EInvoicingSaaS.Domain.sourcelink.json
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/EInvoicingSaaS.Domain.dll
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/refint/EInvoicingSaaS.Domain.dll
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Domain/obj/Debug/net9.0/EInvoicingSaaS.Domain.pdb

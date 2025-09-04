@@ -30,7 +30,7 @@ namespace EInvoicingSaaS.Application.DTOs
         public string CustomerCity { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Postcode is verplicht")]
-        [RegularExpression(@"^\d{4}\s?[A-Z]{2}$", ErrorMessage = "Ongeldige Nederlandse postcode")]
+        [RegularExpression(@"^[1-9]\d{3}$", ErrorMessage = "Ongeldige Belgische postcode")]
         public string CustomerPostalCode { get; set; } = string.Empty;
 
         [Range(0.01, double.MaxValue, ErrorMessage = "Nettobedrag moet groter zijn dan 0")]

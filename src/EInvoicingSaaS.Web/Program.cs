@@ -20,6 +20,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
 builder.Services.AddScoped<ICreateInvoiceUseCase, CreateInvoiceUseCase>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

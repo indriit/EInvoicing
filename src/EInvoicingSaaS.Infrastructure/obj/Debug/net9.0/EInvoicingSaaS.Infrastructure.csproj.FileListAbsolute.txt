@@ -3,6 +3,7 @@
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/obj/Debug/net9.0/EInvoicingSaaS.Infrastructure.AssemblyInfoInputs.cache
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/obj/Debug/net9.0/EInvoicingSaaS.Infrastructure.AssemblyInfo.cs
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/obj/Debug/net9.0/EInvoicingSaaS.Infrastructure.csproj.CoreCompileInputs.cache
+/home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/obj/Debug/net9.0/EInvoicingSaaS.Infrastructure.sourcelink.json
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/bin/Debug/net9.0/EInvoicingSaaS.Infrastructure.deps.json
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/bin/Debug/net9.0/EInvoicingSaaS.Infrastructure.dll
 /home/indrit/dev/EInvoicingSaaS/src/EInvoicingSaaS.Infrastructure/bin/Debug/net9.0/EInvoicingSaaS.Infrastructure.pdb

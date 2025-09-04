@@ -1,15 +1,15 @@
 using EInvoicingSaaS.Domain.Entities;
 using EInvoicingSaaS.Domain.Interfaces;
-using EInvoicingSaaS.Infrastructure.Data;
+using EInvoicingSaaS.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace EInvoicingSaaS.Infrastructure.Repositories
 {
     public class InvoiceRepository : IInvoiceRepository
     {
-        private readonly AppDbContext _context;
+        private readonly DataContext _context;
 
-        public InvoiceRepository(AppDbContext context)
+        public InvoiceRepository(DataContext context)
         {
             _context = context;
         }
